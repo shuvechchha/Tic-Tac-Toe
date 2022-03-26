@@ -1,33 +1,13 @@
-# Tic-Tac-Toe
-Created a tic-tac-toe game with both one and two player modes
-(Note that the most recent version of this markdown will be on Moodle. Once you start a project, your README will not update if I make changes. I will announce any changes on Slack and you can copy the new markdown to replace this information.)
+# Pizza Restaurant
 
-Create a tic-tac-toe game that offers both one and two player modes. The one player mode will have the user playing against the computer. The two player mode will have the two players alternate choosing moves.
+You are to write a point of sale system for a pizza restaurant. A user will be able to enter multiple orders, with each order having multiple pizzas (of two types) and their toppings. After the user is done entering orders, the program will print out all of the orders placed and the price of the most expensive order.
 
-The game should print out the board in a reasonable fashion. I recommend using an array of 9 characters to store the board. You will then print out it across three rows.
+The system will be broken up into multiple classes, each with their own file. The files and a description of the classes are given to you. 
 
-Example:
+Each class handles describing an object in the system, like a Pizza or an Order. These classes have methods and instance variables that store information about the object and allow for operations on that object.
 
-O| | 
------
-X|O|O
------
-X| |X
-O| | 
------
-X|O|O
------
-X| |X
-The game should be able to determine when someone has won and when the game is a draw. Make sure to check all possible ways someone could have won.
+The Restaurant class is special in that it is never instantiated, since there is only one restaurant. Instead, the class only contains static instance variables and methods. You access those methods using Restaurant.addOrder() for example.
 
-Your game should have a game loop that processes the game and gets input. Your game should gracefully handle the situation where the user's input is improper. For example, if you prompt the user to input a number 0-8 to select a move, then you should be able ot handle them inputting 'w' or a selecting an illegal move (i.e. a spot that is already marked). Before the main game loop you should prompt the user to select a 1 or 2 person game.
+See the descriptions at the top of each file for more information about the classes and detailed instructions.
 
-You can use Scanner or TextIO for getting user input. You do not need to be able to read the input from a file. Although if that is helpful for testing, you are welcome to add a method that does that.
-
-The AI for the one player game does not need to be complex. Have it follow a basic strategy like picking the middle and corners or blocking the opponent from winning.
-
-You program should have unit tests to test things like marking the board and determining whether someone has one. Make sure these tests are reasonably robust, i.e. that different situations are tested.
-
-See the Hangman repl for a game that bears some similarity to this. I have purposely not given you a bunch of code to work around, so that you have some flexibility. Start off small, get your board printed out, then add some ability to mark it, then user input, then checking for winning and so on. Keep each step manageable and you'll be done quickly.
-
-Don't forget to submit your brief statement on your contribution to your group to Moodle.
+If you are working in a group (max size 3), add an extra feature of your choice for each person in the group beyond the first. An extra feature might be a new type of pizza or the ability to find the average price of a pizza.  
